@@ -1,4 +1,9 @@
 
+![License - MIT](https://img.shields.io/github/license/dacelisl/confirm-element.svg)
+
+[![Published on NPM](https://img.shields.io/badge/NPM-Published-red.svg)](https://www.npmjs.com/package/confirm-element)
+
+
 # \<confirm-element\>
 
 ## Description.
@@ -13,7 +18,7 @@ confirmation window with two buttons and editable icons
 * Use **confirmtext** add text to the confirmation button.
 * Use **canceltext** add text to the cancel button
 * Use **icon** for the visibility of the icons, default value false.
-* Use **iconcancel** and **iconconfirm** to add the icons to each button correspondingly, the available icons correspond to the portfolio of  [VAADIN ICONS](https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/icons.html),  default values *lumo:cross* and *lumo:checkmark*, if you prefer buttons without icon _none_ 
+* Use **iconcancel** and **iconconfirm** to add the icons to each button correspondingly, the available icons correspond to the portfolio of  [VAADIN ICONS](https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/icons.html),  default values *lumo:cross* and *lumo:checkmark*, if you prefer buttons without icon: *iconconfirm="none"* or *iconcancel="none"* 
 
 
 ### Events  

@@ -26,5 +26,19 @@
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
     "wct-mocha": "^1.0.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dacelisl/confirm-element.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Dacelisl/confirm-element/issues"
+  },
+  "homepage": "https://github.com/Dacelisl/confirm-element#readme"
 }
