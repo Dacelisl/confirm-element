@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+  <title>confirm-element demo</title>
+
+  <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+
+  <script type="module">
+    import '@polymer/iron-demo-helpers/demo-pages-shared-styles';
+    import '@polymer/iron-demo-helpers/demo-snippet';
+    import '@polymer/paper-button/paper-button';
+  </script>
+
+  <script type="module" src="../confirm-element.js"></script>
+
+  <custom-style>
+    <style is="custom-style" include="demo-pages-shared-styles">
+      .confirmBtn {
+        background-color: #29c23a87;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #confirm{
+        color: black;
+        background-color: azure;
+      }
+    </style>
+  </custom-style>
+</head>
+
+<body>
+  <div class="vertical-section-container centered">
+    <h3>Basic confirm-element demo</h3>
+    <demo-snippet>
+      <p>confirmation window with default data on buttons and icons</p>
+      <paper-button class="confirmBtn" id="showconfirm" toggles raised>Click Me</paper-button>
+      <template>
+        <confirm-element id="confirm"  title="Atention!"
+          message="Do you want to delete the content?" icon ></confirm-element>
+      </template>
+    </demo-snippet>
+    <div>
+      <demo-snippet>
+        <p>confirmation window with edited data on buttons and icons</p>
+        <paper-button class="confirmBtn" id="showconfirm2" toggles raised>Click Me</paper-button>
+        <template>
+          <confirm-element id="confirm2" confirmtext="Save" canceltext="Discart" title="Warming"
+            message="Do you want to save changes?" icon iconcancel="none" iconconfirm="lumo:edit"></confirm-element>
+        </template>
+      </demo-snippet>
+    </div>
+  </div>
+  <script>
+    document.getElementById('showconfirm').addEventListener('click', () =>{document.getElementById('confirm').opened = true} );
+    document.getElementById('showconfirm2').addEventListener('click', () =>{document.getElementById('confirm2').opened = true} );
+    
+  </script>
+</body>
+
+</html>
