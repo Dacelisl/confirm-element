@@ -1,3 +1,47 @@
+/**
+*  
+* # \<confirm-element\>
+* ## Description.
+* 
+* confirmation window with two buttons and editable icons
+* 
+* ### Configuration `<confirm-element>`:
+* 
+* * Use **open** to show the window.
+* * Use **title** to add title.
+* * Use **message** to add the body of the message to be displayed.
+* * Use **confirmtext** add text to the confirmation button.
+* * Use **canceltext** add text to the cancel button
+* * Use **icon** for the visibility of the icons, default value false.
+* * Use **iconcancel** and **iconconfirm** to add the icons to each button correspondingly, the available icons correspond to the portfolio of  [VAADIN ICONS](https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/icons.html),  default values *lumo:cross* and *lumo:checkmark*, if you prefer buttons without icon _none_ 
+* 
+* 
+* ### Events  
+* **cancel**:  
+* the cancel event is activated by pressing the cancel button or the ESC key.
+* 
+* **confirm**: CustomEvent  
+* the event is activated by pressing the confirm button
+* 
+* 
+* ```html
+* <confirm-element 
+*     open
+*     title="Warming"
+*     message="Do you want to save changes?" 
+*     confirmtext="Save" 
+*     canceltext="Discart" 
+*     icon 
+*     iconcancel="none" 
+*     iconconfirm="lumo:edit"
+* ></confirm-element>
+* ```
+*   @customElement
+*   @polymer
+*   @demo demo/index.html
+ */
+
+
 import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
 import './src/style/style';
 import './src/style/style-button';
@@ -125,11 +169,18 @@ class ConfirmElement extends PolymerElement {
     </vaadin-dialog-overlay> 
       `;
   }
-
+  /**
+   * @event confirm
+   * the event is activated by pressing the confirm button
+   */
   _confirm() {
     this.opened = false;
     this.dispatchEvent(new CustomEvent('confirm'));
   }
+  /**
+   * @event cancel
+   * the cancel event is activated by pressing the cancel button or the ESC key.
+   */
   _cancel() {
     this.opened = false;
     this.dispatchEvent(new CustomEvent('cancel'));

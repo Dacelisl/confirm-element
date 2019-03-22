@@ -1,26 +1,26 @@
 
-
 # \<confirm-element\>
 
 ## Description.
 
 confirmation window with two buttons and editable icons
 
-###Configuration `<confirm-element>`:
+### Configuration `<confirm-element>`:
 
-Use `open` to show the window.
-Use `title`to add title.
-Use `message` to add the body of the message to be displayed.
-Use `confirmtext` add text to the confirmation button.
-Use `canceltext` add text to the cancel button
-Use `icon` for the visibility of the icons, default value false.
-Use `iconcancel` and `iconconfirm` to add the icons to each button correspondingly, the available icons correspond to the portfolio of VAADIN ICONS (https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/icons.html), default values `lumo:cross` and `lumo:checkmark`, if you prefer buttons without icon `none` 
+* Use **open** to show the window.
+* Use **title** to add title.
+* Use **message** to add the body of the message to be displayed.
+* Use **confirmtext** add text to the confirmation button.
+* Use **canceltext** add text to the cancel button
+* Use **icon** for the visibility of the icons, default value false.
+* Use **iconcancel** and **iconconfirm** to add the icons to each button correspondingly, the available icons correspond to the portfolio of  [VAADIN ICONS](https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/icons.html),  default values *lumo:cross* and *lumo:checkmark*, if you prefer buttons without icon _none_ 
 
-###Events
-`cancel`:
+
+### Events  
+**cancel**:  
 the cancel event is activated by pressing the cancel button or the ESC key.
 
-`confirm`: CustomEvent
+**confirm**: CustomEvent  
 the event is activated by pressing the confirm button
 
 
@@ -49,8 +49,17 @@ the event is activated by pressing the confirm button
     </script>
   </head>
   <body>
-    <confirm-element id="showconfirm" confirmtext="OK" canceltext="Cancel" title="Close"
-            message="Are you sure you want to close this window?" icon iconcancel="none" iconconfirm="lumo:checkmark"></confirm-element>
+
+    <confirm-element 
+      id="showconfirm" 
+      confirmtext="OK" 
+      canceltext="Cancel" 
+      title="Close"
+      message="Are you sure you want to close this window?" 
+      icon iconcancel="none" 
+      iconconfirm="lumo:checkmark"
+    ></confirm-element>
+
   </body>
 </html>
 ```

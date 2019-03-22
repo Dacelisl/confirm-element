@@ -1,6 +1,18 @@
 {
   "name": "confirm-element",
+  "version": "0.0.1",
+  "description": "confirmation window with two buttons and editable icons",
+  "keywords": [
+    "dialog",
+    "dialog-confirm",
+    "confirm",
+    "window",
+    "polymer",
+    "webcomponents"
+  ],
   "main": "confirm-element.js",
+  "author": "Dacelisl",
+  "license": "MIT",
   "dependencies": {
     "@polymer/iron-icon": "^3.0.1",
     "@polymer/paper-button": "^3.0.1",
