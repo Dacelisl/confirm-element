@@ -1,16 +1,23 @@
 
-![License - MIT](https://img.shields.io/github/license/dacelisl/confirm-element.svg)
+![License - MIT](https://img.shields.io/github/license/dacelisl/confirm-element.svg) [![Published on NPM](https://img.shields.io/badge/NPM-Published-red.svg)](https://www.npmjs.com/package/confirm-element) [![Published on Vaadin  Directory](https://img.shields.io/badge/Vaadin%20Directory-published-00b4f0.svg)](https://vaadin.com/directory/component/dacelislconfirm-element)
 
-[![Published on NPM](https://img.shields.io/badge/NPM-Published-red.svg)](https://www.npmjs.com/package/confirm-element)
 
 
 # \<confirm-element\>
 
 ## Description.
 
-confirmation window with two buttons and editable icons
+confirmation window with two buttons and editable icons  
 
-### Configuration `<confirm-element>`:
+
+## Installation
+
+`npm install confirm-element"@0.0.1"` 
+
+
+![Screenshot of confirm-element](https://raw.githubusercontent.com/Dacelisl/confirm-element/master/confirm-element.gif)
+
+### Configuration _<confirm-element>_:
 
 * Use **open** to show the window.
 * Use **title** to add title.
@@ -22,10 +29,10 @@ confirmation window with two buttons and editable icons
 
 
 ### Events  
-**cancel**:  
+**cancel**:  *CustomEvent*
 the cancel event is activated by pressing the cancel button or the ESC key.
 
-**confirm**: CustomEvent  
+**confirm**: *CustomEvent*  
 the event is activated by pressing the confirm button
 
 
@@ -42,10 +49,10 @@ the event is activated by pressing the confirm button
 ></confirm-element>
 ```
 
-
 ## Usage
 
 ### In an html file
+
 ```html
 <html>
   <head>
@@ -100,7 +107,9 @@ class SampleElement extends PolymerElement {
 }
 customElements.define('sample-element', SampleElement);
 ```
+## License
 
+MIT License
 
 
 
