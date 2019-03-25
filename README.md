@@ -12,7 +12,7 @@ confirmation window with two buttons and editable icons
 
 ## Installation
 
-`npm install confirm-element"@0.0.1"` 
+`npm install confirm-element"@0.0.2"` 
 
 
 ![Screenshot of confirm-element](https://raw.githubusercontent.com/Dacelisl/confirm-element/master/confirm-element.gif)

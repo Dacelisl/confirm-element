@@ -1,6 +1,6 @@
 {
   "name": "confirm-element",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "confirmation window with two buttons and editable icons",
   "keywords": [
     "dialog",
